@@ -7,9 +7,9 @@ This is the official implementation of the paper "CoreDiff: Contextual Error-Mod
 
 ## Data Preparation
 - The AAPM-Mayo dataset can be downloaded from: [Mayo 2016](https://ctcicblog.mayo.edu/2016-low-dose-ct-grand-challenge/). 
-- The "Low Dose CT Image and Projection Data" can be found from [Mayo 2020](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=52758026#527580262a84e4aa87794b6583c78dccf041269f)
-- The Piglet Dataset can be found from: [SAGAN](https://github.com/xinario/SAGAN)
-- The Phantom Dataset can be downloaded from: [XNAT](https://xnat.bmia.nl/app/template/XDATScreen_report_xnat_projectData.vm/search_element/xnat:projectData/search_field/xnat:projectData.ID/search_value/stwstrategyps4)
+- The "Low Dose CT Image and Projection Data" can be found from [Mayo 2020](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=52758026#527580262a84e4aa87794b6583c78dccf041269f).
+- The Piglet Dataset can be found from: [SAGAN](https://github.com/xinario/SAGAN).
+- The Phantom Dataset can be downloaded from: [XNAT](https://xnat.bmia.nl/app/template/XDATScreen_report_xnat_projectData.vm/search_element/xnat:projectData/search_field/xnat:projectData.ID/search_value/stwstrategyps4).
 
 
 ## Training & Inference
