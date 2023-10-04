@@ -27,6 +27,7 @@ Please check `train.sh` for training script (or `test.sh` for inference script) 
 - h5py=3.7.0
 - pydicom=2.3.1
 - natsort=8.2.0
+- scikit-image=0.21.0
 - einops=0.4.1
 - tqdm=4.64.1
 - wandb=0.13.3
