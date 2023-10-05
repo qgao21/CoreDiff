@@ -13,7 +13,7 @@ This is the official implementation of the paper "CoreDiff: Contextual Error-Mod
 
 
 ## Training & Inference
-Please check `train.sh` for training script (or `test.sh` for inference script) once the data is well prepared. Specify the dataset path and other setting in the script, and simply run it in the terminal.
+Please check `train.sh` for training script (or `test.sh` for inference script) once the data is well prepared. Specify the setting in the script, and simply run it in the terminal.
 
 ## Requirements
 ```
