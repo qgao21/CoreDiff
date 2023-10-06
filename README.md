@@ -15,6 +15,8 @@ This is the official implementation of the paper "CoreDiff: Contextual Error-Mod
 ## Training & Inference
 Please check `train.sh` for training script (or `test.sh` for inference script) once the data is well prepared. Specify the setting in the script, and simply run it in the terminal.
 
+For one-shot learning framework，please check `train_osl_framework_training.sh` for training script (or `test_osl_framework.sh` for inference script)
+
 ## Requirements
 ```
 - Linux Platform
