@@ -1,4 +1,4 @@
-CUDA_VISIBLE_DEVICES=0 python main.py\
+CUDA_VISIBLE_DEVICES=gpu_id python main.py\
  --model_name corediff\
  --run_name dose5_mayo2016\
  --test_batch_size 1\
