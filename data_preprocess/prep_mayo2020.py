@@ -2,7 +2,6 @@ import os
 import os.path as osp
 import argparse
 import numpy as np
-import pandas as pd
 from natsort import natsorted
 from glob import glob
 import pydicom
