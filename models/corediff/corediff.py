@@ -14,7 +14,6 @@ from .corediff_wrapper import Network, WeightNet
 from .diffusion_modules import Diffusion
 
 import wandb
-from ipdb import set_trace
 
 
 class corediff(TrainTask):
