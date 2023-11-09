@@ -93,7 +93,7 @@ class adjust_net(nn.Module):
  # The architecture of U-Net refers to "Toward Convolutional Blind Denoising of Real Photographs",
  # official MATLAB implementation: https://github.com/GuoShi28/CBDNet.
  # unofficial PyTorch implementation: https://github.com/IDKiro/CBDNet-pytorch/tree/master.
- # We improved it by adding time step embedding and EMM module and and removed the noise estimation network.
+ # We improved it by adding time step embedding and EMM module, while removing the noise estimation network.
 class UNet(nn.Module):
     def __init__(self, in_channels=2, out_channels=1):
         super(UNet, self).__init__()
