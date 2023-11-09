@@ -10,8 +10,6 @@ from utils.loggerx import LoggerX
 from utils.sampler import RandomSampler
 from utils.ops import load_network
 
-from ipdb import set_trace
-
 
 class TrainTask(object):
 
