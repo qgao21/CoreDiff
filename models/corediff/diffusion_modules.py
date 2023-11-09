@@ -4,7 +4,6 @@ import torch
 from torch import nn
 import torchvision
 import math
-from ipdb import set_trace
 
 
 def extract(a, t, x_shape):
