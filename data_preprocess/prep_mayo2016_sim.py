@@ -2,7 +2,6 @@ import os
 import argparse
 import numpy as np
 import h5py
-from ipdb import set_trace
 
 
 def save_dataset(args):
