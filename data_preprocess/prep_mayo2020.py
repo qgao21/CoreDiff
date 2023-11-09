@@ -6,7 +6,6 @@ from natsort import natsorted
 from glob import glob
 import pydicom
 import sys
-from ipdb import set_trace
 
 
 def save_dataset(args):
