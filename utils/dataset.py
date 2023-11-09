@@ -6,7 +6,6 @@ import numpy as np
 import torch
 from functools import partial
 import torch.nn.functional as F
-from ipdb import set_trace
 
 
 class CTDataset(Dataset):
