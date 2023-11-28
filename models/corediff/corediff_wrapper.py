@@ -215,12 +215,17 @@ class UNet(nn.Module):
 
 
 class Network(nn.Module):
-    def __init__(self, in_channels=3, out_channels=1):
+    def __init__(self, in_channels=3, out_channels=1, context=True):
         super(Network, self).__init__()
         self.unet = UNet(in_channels=in_channels, out_channels=out_channels)
+        self.context = context
 
     def forward(self, x, t, y, x_end, adjust=True):
-        x_middle = x[:, 1].unsqueeze(1)
+        if self.context:
+            x_middle = x[:, 1].unsqueeze(1)
+        else:
+            x_middle = x
+        
         x_adjust = torch.cat((y, x_end), dim=1)
         out = self.unet(x, t, x_adjust, adjust=adjust) + x_middle
 
