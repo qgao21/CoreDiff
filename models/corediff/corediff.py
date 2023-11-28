@@ -46,7 +46,7 @@ class corediff(TrainTask):
         self.sampling_routine = opt.sampling_routine
         self.context = opt.context
         
-        denoise_fn = Network(in_channels=opt.in_channels)
+        denoise_fn = Network(in_channels=opt.in_channels, context=opt.context)
 
         model = Diffusion(
             denoise_fn=denoise_fn,
