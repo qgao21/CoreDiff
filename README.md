@@ -2,6 +2,7 @@
 This is the official implementation of the paper "CoreDiff: Contextual Error-Modulated Generalized Diffusion Model for Low-Dose CT Denoising and Generalization". The pre-print version can be found in [arxiv](https://arxiv.org/abs/2304.01814); the early access version can be found in [TMI](https://ieeexplore.ieee.org/document/10268250).
 
 ## Updates
+- Dec, 2023: Updated the code for preprocessing the original Mayo 2016 "DICOM: format data and its corresponding training demo.
 - Oct, 2023: initial commit.
 
 
@@ -16,6 +17,9 @@ This is the official implementation of the paper "CoreDiff: Contextual Error-Mod
 Please check `train.sh` for training script (or `test.sh` for inference script) once the data is well prepared. Specify the setting in the script, and simply run it in the terminal.
 
 For one-shot learning framework，please check `train_osl_framework_training.sh` for training script (or `test_osl_framework.sh` for inference script)
+
+## Training loss and evaluation metrics on the test set
+![image](https://github.com/qgao21/CoreDiff/tree/main/figs/loss_and_metrics.png)
 
 ## Requirements
 ```
