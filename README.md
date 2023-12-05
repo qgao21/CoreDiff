@@ -18,7 +18,8 @@ Please check `train.sh` for training script (or `test.sh` for inference script) 
 
 For one-shot learning framework，please check `train_osl_framework_training.sh` for training script (or `test_osl_framework.sh` for inference script)
 
-## Training loss and evaluation metrics. These curves are calculated based on our simulated 5% dose data.
+## Training loss and evaluation metrics. 
+These curves are calculated based on our simulated 5% dose data.
 ![Image text](https://github.com/qgao21/CoreDiff/blob/main/figs/loss_and_metrics.png)
 
 ## Requirements
