@@ -63,8 +63,8 @@ class TrainTask(object):
                             help='patch size used to divide the image')
 
         # dataset
-        parser.add_argument('--train_dataset', type=str, default='mayo_2016')
-        parser.add_argument('--test_dataset', type=str, default='mayo_2016')   # mayo_2020, piglte, phantom
+        parser.add_argument('--train_dataset', type=str, default='mayo_2016_sim')
+        parser.add_argument('--test_dataset', type=str, default='mayo_2016_sim')   # mayo_2020, piglte, phantom, mayo_2016
         parser.add_argument('--test_id', type=int, default=9,
                             help='test patient index for Mayo 2016')
         parser.add_argument('--context', action="store_true",
