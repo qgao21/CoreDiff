@@ -44,7 +44,7 @@ def save_dataset(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_path', type=str, default='/your data save path/')   # data format: dicom
-    parser.add_argument('--save_path', type=str, default='./gen_data/mayo_2016_ori_npy/')
+    parser.add_argument('--save_path', type=str, default='./gen_data/mayo_2016_npy/')
     args = parser.parse_args()
 
     save_dataset(args)
