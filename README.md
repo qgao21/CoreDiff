@@ -19,7 +19,7 @@ Please check `train.sh` for training script (or `test.sh` for inference script) 
 For one-shot learning framework，please check `train_osl_framework_training.sh` for training script (or `test_osl_framework.sh` for inference script)
 
 ## Training loss and evaluation metrics on the test set
-![image](https://github.com/qgao21/CoreDiff/tree/main/figs/loss_and_metrics.png)
+![Image text](https://github.com/qgao21/CoreDiff/tree/main/figs/loss_and_metrics.png)
 
 ## Requirements
 ```
