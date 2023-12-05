@@ -6,8 +6,6 @@ from natsort import natsorted
 from glob import glob
 import pydicom
 
-from ipdb import set_trace
-
 
 def save_dataset(args):
     if not osp.exists(args.save_path):
@@ -45,9 +43,8 @@ def save_dataset(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    # parser.add_argument('--data_path', type=str, default='/your data save path/')   # data format: dicom
-    parser.add_argument('--data_path', type=str, default='/data/qgao/Dataset/ct_sim/AAPM_LDCT')  # data format: dicom
-    parser.add_argument('--save_path', type=str, default='/data/qgao/Dataset/gen_data/mayo_2016_npy/')
+    parser.add_argument('--data_path', type=str, default='/your data save path/')   # data format: dicom
+    parser.add_argument('--save_path', type=str, default='./gen_data/mayo_2016_ori_npy/')
     args = parser.parse_args()
 
     save_dataset(args)
