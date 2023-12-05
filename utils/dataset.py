@@ -14,9 +14,12 @@ class CTDataset(Dataset):
         self.context = context
         print(dataset)
 
-        if dataset == 'mayo_2016':
-            data_root = './data_preprocess/gen_data/mayo_2016_sim_npy'
-
+        if dataset in ['mayo_2016_sim', 'mayo_2016']:
+            if dataset == 'mayo_2016_sim':
+                data_root = './data_preprocess/gen_data/mayo_2016_sim_npy'
+            elif dataset == 'mayo_2016':
+                data_root = './data_preprocess/gen_data/mayo_2016_npy'
+                
             patient_ids = [67, 96, 109, 143, 192, 286, 291, 310, 333, 506]
             if mode == 'train':
                 patient_ids.pop(test_id)
@@ -149,8 +152,9 @@ class CTDataset(Dataset):
 
 
 dataset_dict = {
-    'train': partial(CTDataset, dataset='mayo_2016', mode='train', test_id=9, dose=5, context=True),
-    'mayo_2016': partial(CTDataset, dataset='mayo_2016', mode='test', test_id=None, dose=5, context=True),
+    'train': partial(CTDataset, dataset='mayo_2016_sim', mode='train', test_id=9, dose=5, context=True),
+    'mayo_2016_sim': partial(CTDataset, dataset='mayo_2016_sim', mode='test', test_id=9, dose=5, context=True),
+    'mayo_2016': partial(CTDataset, dataset='mayo_2016', mode='test', test_id=9, dose=25, context=True),
     'mayo_2020': partial(CTDataset, dataset='mayo_2020', mode='test', test_id=None, dose=None, context=True),
     'piglet': partial(CTDataset, dataset='piglet', mode='test', test_id=None, dose=None, context=True),
     'phantom': partial(CTDataset, dataset='phantom', mode='test', test_id=None, dose=108, context=True),
