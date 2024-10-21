@@ -2,7 +2,7 @@
 This is the official implementation of the paper "CoreDiff: Contextual Error-Modulated Generalized Diffusion Model for Low-Dose CT Denoising and Generalization". The pre-print version can be found in [arxiv](https://arxiv.org/abs/2304.01814); the early access version can be found in [TMI](https://ieeexplore.ieee.org/document/10268250).
 
 ## Updates
-- Oct, 2024: Uploaded the pre-trained model on the original Mayo 2016 'DICOM' format data (25% dose).
+- Oct, 2024: Uploaded the pre-trained model on the original Mayo 2016 'DICOM' format data (25% dose): (https://drive.google.com/drive/folders/1rGb34H_6ktP79vMYYJOLSoCE3579TDZ5?usp=drive_link).
 - Dec, 2023: Updated the code for preprocessing the original Mayo 2016 "DICOM" format data (`data_preporcess/prep_mayo2016.py`) and its corresponding training demo (`train_mayo2016.sh`).
 - Oct, 2023: initial commit.
 
