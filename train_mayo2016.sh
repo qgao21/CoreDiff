@@ -1,7 +1,7 @@
 CUDA_VISIBLE_DEVICES=gpu_id python main.py\
  --model_name corediff\
  --run_name dose25_mayo_2016\
- --batch_size 4\
+ --batch_size 8\
  --max_iter 150000\
  --test_dataset mayo_2016\
  --test_id 9\
