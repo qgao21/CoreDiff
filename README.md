@@ -1,5 +1,5 @@
 # CoreDiff: Contextual Error-Modulated Generalized Diffusion Model for Low-Dose CT Denoising and Generalization
-This is the official implementation of the paper "CoreDiff: Contextual Error-Modulated Generalized Diffusion Model for Low-Dose CT Denoising and Generalization". The pre-print version can be found in [arxiv](https://arxiv.org/abs/2304.01814); the early access version can be found in [TMI](https://ieeexplore.ieee.org/document/10268250).
+This is the official implementation of the paper "CoreDiff: Contextual Error-Modulated Generalized Diffusion Model for Low-Dose CT Denoising and Generalization". The pre-print version can be found in [arxiv](https://arxiv.org/abs/2304.01814); the published version can be found in [TMI](https://ieeexplore.ieee.org/document/10268250).
 
 ## Updates
 - Oct, 2024: Uploaded the pre-trained model on the original Mayo 2016 'DICOM' format data (25% dose): [ema_model-150000](https://drive.google.com/drive/folders/1rGb34H_6ktP79vMYYJOLSoCE3579TDZ5?usp=drive_link).
@@ -54,6 +54,9 @@ If you find our work and code helpful, please kindly cite the corresponding pape
   title={CoreDiff: Contextual Error-Modulated Generalized Diffusion Model for Low-Dose CT Denoising and Generalization},
   author={Gao, Qi and Li, Zilong and Zhang, Junping and Zhang, Yi and Shan, Hongming},
   journal={IEEE Transactions on Medical Imaging},
-  year={2023}
+  volume={43},
+  number={2},
+  pages={745--759},
+  year={2024}
 }
 ```
