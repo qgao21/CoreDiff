@@ -60,6 +60,13 @@ class LoggerX(object):
             module = self.modules[i]
             module.load_state_dict(load_network(osp.join(self.models_save_dir, '{}-{}'.format(module_name, epoch))))
 
+    def load_test_checkpoints(self, epoch):
+        for i in range(len(self.modules)):
+            module_name = self.module_names[i]
+            if module_name == 'ema_model':
+                module = self.modules[i]
+                module.load_state_dict(load_network(osp.join(self.models_save_dir, '{}-{}'.format(module_name, epoch))))
+
     def msg(self, stats, step):
         output_str = '[{}] {:05d}, '.format(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), step)
 
