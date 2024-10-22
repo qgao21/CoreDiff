@@ -148,18 +148,18 @@ class TrainTask(object):
                     self.generate_images(n_iter)
 
         elif opt.mode == 'test':
-            self.logger.load_checkpoints(opt.test_iter)
+            self.logger.load_test_checkpoints(opt.test_iter)
             self.test(opt.test_iter)
             self.generate_images(opt.test_iter)
 
         # train one-shot learning framework
         elif opt.mode == 'train_osl_framework':
-            self.logger.load_checkpoints(opt.test_iter)
+            self.logger.load_test_checkpoints(opt.test_iter)
             self.train_osl_framework(opt.test_iter)
 
         # test one-shot learning framework
         elif opt.mode == 'test_osl_framework':
-            self.logger.load_checkpoints(opt.test_iter)
+            self.logger.load_test_checkpoints(opt.test_iter)
             self.test_osl_framework(opt.test_iter)
 
 
