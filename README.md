@@ -46,7 +46,6 @@ These curves are calculated based on our simulated 5% dose data.
 - Low-dose CT data simulation refers to [LD-CT-simulation](https://github.com/smuzd/LD-CT-simulation). Thanks for open-sourcing!
 
 
-
 ## Citation
 If you find our work and code helpful, please kindly cite the corresponding paper:
 ```
